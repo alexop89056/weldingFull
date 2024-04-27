@@ -705,7 +705,7 @@ button {
   }
 }
 .products {
-  background: url("/img/Rectangle 30.png") center center no-repeat;
+  background: url("../img/Rectangle 30.png") center center no-repeat;
   background-size: cover;
   padding: 50px 0;
 }
@@ -838,7 +838,7 @@ button {
   border-radius: 50px;
   width: 20px;
   height: 30px;
-  background: url("/img/svg/Vector_left.svg") center center no-repeat;
+  background: url("../img/svg/Vector_left.svg") center center no-repeat;
   background-color: #FEC627;
   padding: 15px;
 }
@@ -851,7 +851,7 @@ button {
   left: calc(50% - 130px);
   width: 20px;
   height: 30px;
-  background: url("/img/svg/Vector_left.svg") center center no-repeat;
+  background: url("../img/svg/Vector_left.svg") center center no-repeat;
   background-color: #FEC627;
   padding: 15px;
 }
@@ -930,22 +930,22 @@ footer .footer__subscribe .main__btn button {
   z-index: 5;
 }
 .bg__klip.klip-1 {
-  background: url("/img/black-plastic-welding-mask-isolated-png 1.png") center center no-repeat;
+  background: url("../img/black-plastic-welding-mask-isolated-png 1.png") center center no-repeat;
   height: 140px;
   width: 120px;
 }
 .bg__klip.klip-2 {
-  background: url("/img/klipartz 6.png") center center no-repeat;
+  background: url("../img/klipartz 6.png") center center no-repeat;
   width: 150px;
   height: 280px;
 }
 .bg__klip.klip-3 {
-  background: url("/img/klipartz 8.png") center center no-repeat;
+  background: url("../img/klipartz 8.png") center center no-repeat;
   width: 150px;
   height: 385px;
 }
 .bg__klip.klip-4 {
-  background: url("/img/klipartz 3.png") center center no-repeat;
+  background: url("../img/klipartz 3.png") center center no-repeat;
   width: 140px;
   height: 240px;
 }
