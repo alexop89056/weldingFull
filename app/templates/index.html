@@ -9,9 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
 </head>
 <body>
+
+    {%  include 'template/header.html' %}
     
     <div class="order__form">
         <div class="order__form-body">
@@ -305,90 +307,14 @@
             </section>
 
 
-            <section class="order__part">
-                <div class="order__content">
-                    <div class="con">
-                        <div class="order__body">
-                            <div class="order__form-content">
-                                <div class="container">
-                                    <div class="order__title">
-                                        <h1 class="main__title  ">Sifariş vermək</h1>
-                                    </div>
-                                    <form action="" method="post">
-                                        <input type="email" style="width: 100%;" placeholder="E-poçt">
-                                        <input type="text" style="width: 100%;" placeholder="Əlaqə nömrəniz">
-                                        <input type="text" placeholder="Ad">
-                                        <input type="text" placeholder="Soyad">
-                                        <textarea name="" id="" cols="30" rows="5" style="width: 100%;" placeholder="Messaj"></textarea>
-                
-                                        <div class="main__btn">
-                                            <button>Göndər</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="order__img">
-                                <img src="{% static 'img/Rectangle 28.png' %}" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            {% include 'template/order.html' %}
         </main>
-        <footer class="footer">
-            <div class="footer__content">
-                <div class="container">
-                    <div class="footer__body">
-                        <div class="footer__info">
-                            <div class="main__logo">
-                                <a href="#"><h1>Logo<span>.logo</span></h1></a>
-                            </div>
-                            <div class="info__text">
-                                <h2>QAYNAQÇI XIDMƏTI</h2>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque hic corporis unde veniam consequatur, vel consequuntur dolores magnam nesciunt odit ad molestiae voluptate sunt rem nihil tenetur aliquid dolore blanditiis eum harum voluptatum. Sunt, perspiciatis!</p>
-                            </div>
-                        </div>
-                        <div class="footer__menu">
-                            <nav class="menu">
-                                <ul>
-                                    <a href=""><li class="header__link">Ana səhifə</li></a>
-                                    <a href=""><li class="header__link">Xi̇dmətlər</li></a>
-                                    <a href=""><li class="header__link">Məni̇m haqqimda</li></a>
-                                    <a href=""><li class="header__link">Məni̇m i̇şləri̇m</li></a>
-                                    <a href=""><li class="header__link">Sual vermək</li></a>
-                                    <a href=""><li class="header__link">Si̇fari̇ş vermək</li></a>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="footer__link">
-                            <div class="info">
-                                <a href="#"><span><img src="{% static 'img/svg/Vector_lock.svg' %}"  alt="w"></span> Məkan</a>
-                                <a href="#"><span><img src="{% static 'img/svg/Vector_call.svg' %}"  alt=""></span> 0506666666</a>
-                                <a href="#"><span><img src="{% static 'img/svg/Vector_mess.svg' %}"  alt=""></span> example@gmail.com</a>
-                                
-                            </div>
-                            <div class="contacts">
-                                <a href="#"><img src="{% static 'img/svg/Vector_vk.svg' %}" alt=""></a>
-                                <a href="#"><img src="{% static 'img/svg/Vector.svg' %}" alt=""></a>
-                                <a href="#"><img src="{% static 'img/svg/whatsapp.svg' %}" alt=""> </a>
-                                <a href="#"><img src="{% static 'img/svg/basil_viber-outline.svg' %}" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="footer__subscribe">
-                            <input type="text" placeholder="E-poçt">
-                            <div class="main__btn">
-                                <button>Abunə ol</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        {% include 'template/footer.html' %}
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/index.js' %}"></script>
 </body>
 </html>
