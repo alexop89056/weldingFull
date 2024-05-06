@@ -795,6 +795,7 @@ button {
 }
 .review .review__info {
   text-align: center;
+
 }
 .review .review__info .main__title::before {
   left: 50%;
@@ -806,6 +807,11 @@ button {
   background: #F6F6F6;
   padding: 15px;
   border-radius: 14px;
+
+}
+.review__slider-item{
+  display: flex;
+  justify-content: center;
 }
 .review .slider__body h1 {
   font-size: 22px;
