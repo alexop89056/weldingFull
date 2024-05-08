@@ -57,22 +57,18 @@ function hideDropdownContent(content) {
 }
 
 // Обработчики событий для первого меню
-dropdownBtn1.addEventListener('mouseenter', () => {
+dropdownBtn1.addEventListener('click', () => {
     showDropdownContent(dropdownBtn1, dropdownContent1);
 });
 
-dropdownContent1.addEventListener('mouseleave', () => {
-    hideDropdownContent(dropdownContent1);
-});
+
 
 // Обработчики событий для второго меню
-dropdownBtn2.addEventListener('mouseenter', () => {
+dropdownBtn2.addEventListener('click', () => {
     showDropdownContent(dropdownBtn2, dropdownContent2);
 });
 
-dropdownContent1.addEventListener('mouseleave', () => {
-    hideDropdownContent(dropdownContent2);
-});
+
 
 // Скрываем выпадающее меню при клике вне него
 document.addEventListener('click', (event) => {

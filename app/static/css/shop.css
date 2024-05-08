@@ -295,7 +295,7 @@ button {
   position: relative;
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: 50;
+  z-index: 10;
   max-width: 95%;
   border-radius: 4px;
   -webkit-box-shadow: -10px 10px 0px 0px rgb(254, 198, 39);
@@ -327,7 +327,7 @@ button {
 
 .header__content .header__up {
   position: relative;
-  z-index: 50;
+  z-index: 20;
   padding: 10px 0;
   background: #131313;
 }
@@ -622,6 +622,7 @@ button {
 }
 .popup.open {
   left: 0;
+    top: 0;
 }
 
 .product__page {
@@ -1036,15 +1037,16 @@ button {
   display: flex;
   gap: 10px;
 }
-.pagination__body ul li {
+.pagination__body ul li a{
   padding: 5px 10px;
+  cursor: pointer;
   color: #131313;
   background: #f6f6f6;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
   border-radius: 4px;
 }
-.pagination__body ul li:hover {
+.pagination__body ul li a:hover {
   background: #FEC627;
 }
 
@@ -1053,6 +1055,11 @@ button {
   background-size: cover;
   position: relative;
   overflow: hidden;
+  z-index: 5;
+}
+.order__part .main__title{
+  font-size: 48px;
+
 }
 .order__part .order__body {
   display: -webkit-box;
@@ -1083,7 +1090,7 @@ button {
   width: 45%;
 }
 .order__part .order__form-content form input, .order__part .order__form-content form textarea {
-  padding: 10px 15px;
+  padding:20px;
   border-radius: 4px;
   border: none;
 }
@@ -1107,8 +1114,8 @@ button {
 @media (min-width: 767px) {
   .order__part .order__img {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+        -ms-flex: 0 0 45%;
+            flex: 0 0 45%;
     -webkit-transform: translate(-100%, 0px);
             transform: translate(-100%, 0px);
   }

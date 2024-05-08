@@ -472,7 +472,7 @@ button {
     display: block;
   }
   .header__menu {
-    z-index: 10;
+    z-index: 30;
     padding: 15px;
     position: absolute;
     background: #fff;
@@ -482,7 +482,7 @@ button {
     transition: 0.5s all ease;
   }
   .header__menu.active {
-    top: 114px;
+    top: 112px;
   }
   .header__menu .menu ul {
     gap: 5px 100px;
@@ -514,7 +514,7 @@ button {
 }
 .services .bg__klip.klip-1 {
   top: 10%;
-  left: 0;
+  left: -50px;
 }
 .services .bg__klip.klip-2 {
   top: 40%;
@@ -636,12 +636,16 @@ button {
   gap: 15px 0;
 }
 .order__part .order__form-content form input {
+
   width: 45%;
 }
 .order__part .order__form-content form input, .order__part .order__form-content form textarea {
-  padding: 10px 15px;
+  padding: 20px;
   border-radius: 4px;
   border: none;
+}
+.order__title .main__title{
+  font-size: 48px;
 }
 .order__part .order__img {
   position: relative;
@@ -663,8 +667,8 @@ button {
 @media (min-width: 767px) {
   .order__part .order__img {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+        -ms-flex: 0 0 45%;
+            flex: 0 0 45%;
     -webkit-transform: translate(-100%, 0px);
             transform: translate(-100%, 0px);
   }
@@ -930,29 +934,36 @@ footer .footer__subscribe .main__btn button {
   }
 }
 .bg__klip {
-  background-size: cover;
+
   position: absolute;
   width: 100px;
   height: 100px;
   z-index: 5;
+
+
 }
 .bg__klip.klip-1 {
   background: url("../img/black-plastic-welding-mask-isolated-png 1.png") center center no-repeat;
   height: 140px;
-  width: 120px;
+  width: 150px;
+  background-size: cover;
 }
 .bg__klip.klip-2 {
   background: url("../img/klipartz 6.png") center center no-repeat;
   width: 150px;
-  height: 280px;
+ background-size: cover;
+  height:300px;
+
 }
 .bg__klip.klip-3 {
   background: url("../img/klipartz 8.png") center center no-repeat;
   width: 150px;
-  height: 385px;
+  height: 410px;
+  background-size: cover;
 }
 .bg__klip.klip-4 {
   background: url("../img/klipartz 3.png") center center no-repeat;
   width: 140px;
+  background-size: cover;
   height: 240px;
 }
