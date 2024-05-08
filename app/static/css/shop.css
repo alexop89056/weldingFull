@@ -506,7 +506,7 @@ button {
     display: block;
   }
   .header__menu {
-    z-index: 10;
+    z-index: 21;
     padding: 15px;
     position: absolute;
     background: #fff;
@@ -562,10 +562,11 @@ button {
 .shop__structure .shop__element {
   border-bottom: 1px solid #f6f6f6;
   padding: 10px 0;
-  width: 270px;
+\
   z-index: 0;
   cursor: pointer;
 }
+
 .shop__structure .shop__element img {
   max-width: 100%;
   -o-object-fit: cover;
@@ -619,6 +620,7 @@ button {
   overflow-y: auto;
   position: fixed;
   left: -100vw;
+  z-index: 50;
 }
 .popup.open {
   left: 0;
@@ -626,7 +628,7 @@ button {
 }
 
 .product__page {
-  width: 80%;
+  min-width: 65%;
   max-height: 200%;
   -webkit-box-shadow: -100px -100px 0px 100vw rgba(0, 0, 0, 0.3);
           box-shadow: -100px -100px 0px 100vw rgba(0, 0, 0, 0.3);
@@ -859,13 +861,15 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 0px 20px;
 }
 
 /* Стили для кнопки выпадающего меню */
 .dropbtn {
+  text-align: left;
   border: 1px solid #858585;
-  padding: 10px 100px 10px 15px;
+  padding: 15px 100px 15px 15px;
   border-radius: 4px;
   background: none;
   width: 100%;
@@ -875,8 +879,8 @@ button {
   content: "";
   position: absolute;
   border-radius: 50px;
-  top: 40%;
-  right: 10px;
+  bottom: 50%;
+  right: 16px;
   width: 10px;
   height: 2px;
   background: #858585;
@@ -887,7 +891,7 @@ button {
   content: "";
   position: absolute;
   border-radius: 50px;
-  bottom: 40%;
+  bottom: 50%;
   right: 10px;
   width: 10px;
   height: 2px;
@@ -900,7 +904,7 @@ button {
 .dropdown {
   position: relative;
   display: inline-block;
-  z-index: 200;
+  z-index: 10;
 }
 
 /* Стили для выпадающего контента */
@@ -908,11 +912,30 @@ button {
   display: none;
   position: absolute;
   background: #fff;
-  min-width: 160px;
+  
+  min-width: 100%;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 767px) {
+  .dropdown-content{
+    position: relative;
+  }
+  .dropdown{
+
+    width: calc(100vw - 20px);
+  }
+  .element__img{
+    width: 100%;
+  }
+  .shop__structure .shop__element {
+    width: 100%;
+  }
+  .element__img img{
+    width: 100%;
+  }
+}
 .dropdown-content a {
   position: relative;
   color: black;
@@ -927,6 +950,7 @@ button {
 }
 
 .show {
+  
   display: block;
 }
 

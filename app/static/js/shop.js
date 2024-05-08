@@ -1,3 +1,14 @@
+const burger = document.querySelector('.header__burger');
+const header_menu_list = document.querySelector('.header__menu');
+const body = document.querySelector('body');
+
+burger.addEventListener('click', function (event){
+    burger.classList.toggle('active')
+    header_menu_list.classList.toggle('active');
+    body.classList.toggle('lock');
+});
+
+
 $(document).ready(function() {
     $('.order').on('click', function() {
         $('.order__form').addClass('open');
