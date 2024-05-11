@@ -744,8 +744,8 @@ button {
   width: 350px;
 }
 .products .products__slider .products__slider-item img {
-  width: 60%;
-  height: 80%;
+  width: 85%;
+  height: 89%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 4px;
