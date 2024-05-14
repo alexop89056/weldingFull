@@ -285,7 +285,7 @@ button {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 50;
-  max-width: 95%;
+  width: 100%;
   border-radius: 4px;
   -webkit-box-shadow: -10px 10px 0px 0px rgb(254, 198, 39);
   box-shadow: -10px 10px 0px 0px rgb(254, 198, 39);
@@ -442,7 +442,7 @@ button {
   transition: 0.3s all ease;
 }
 
-@media (max-width: 1068px) {
+@media (max-width: 1268px) {
   .bg__klip {
     display: none;
   }
@@ -513,8 +513,8 @@ button {
   position: relative;
 }
 .services .bg__klip.klip-1 {
-  top: 10%;
-  left: -50px;
+  top: 4%;
+  left: -60px;
 }
 .services .bg__klip.klip-2 {
   top: 40%;
@@ -531,7 +531,7 @@ button {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -944,8 +944,8 @@ footer .footer__subscribe .main__btn button {
 }
 .bg__klip.klip-1 {
   background: url("../img/black-plastic-welding-mask-isolated-png 1.png") center center no-repeat;
-  height: 140px;
-  width: 150px;
+  height: 100px;
+  width: 120px;
   background-size: cover;
 }
 .bg__klip.klip-2 {
@@ -966,4 +966,18 @@ footer .footer__subscribe .main__btn button {
   width: 140px;
   background-size: cover;
   height: 240px;
+}
+.review__content .bg__klip.klip-1 {
+  right: 20px;
+  bottom: 10px;
+  transform: rotate(90deg);
+
+}
+.review__content{
+  position: relative;
+}
+.review__content .bg__klip.klip-2 {
+  transform: scaleX(-1) rotate(-40deg);
+  left: 0 ;
+  top: -20px;
 }
