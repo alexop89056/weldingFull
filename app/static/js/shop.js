@@ -15,8 +15,8 @@ $(document).ready(function() {
         $('body').addClass('lock');
     });
     $('.shop__element').on('click', function() {
-        $('.popup').addClass('open');
-        $('body').addClass('lock');
+        let work_title = $(this).data("work-title");
+        window.location.href = "/work/" + work_title;
     });
     $('.close').on('click', function () {
         $('.order__form').removeClass('open');

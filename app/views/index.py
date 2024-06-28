@@ -1,7 +1,9 @@
 import random
 
+from django.http import HttpResponseNotFound
 from django.shortcuts import render
 
+from app.models import Work
 
 reviews = [
     {
@@ -45,4 +47,19 @@ def index(request):
 
 
 def catalog(request):
-    return render(request, 'catalog.html')
+    context = {
+        "works": Work.objects.all()
+    }
+    return render(request, 'catalog.html', context=context)
+
+
+def work_view(request, slug):
+    try:
+        work = Work.objects.get(slug__iexact=slug)
+    except Work.DoesNotExist:
+        return HttpResponseNotFound()
+
+    context = {
+        "work": work
+    }
+    return render(request, 'work.html', context=context)

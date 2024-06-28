@@ -1,1 +1,1 @@
-from .index import index, catalog
+from .index import index, catalog, work_view

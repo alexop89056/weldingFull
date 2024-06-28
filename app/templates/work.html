@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Сварочные Работы</title>
+    <link rel="icon" href="{% static 'img/logo/icon.png' %}" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+
+    {%  include 'template/header.html' %}
+
+<div class="order__form">
+        <div class="order__form-body">
+            <div class="container">
+                <span class="close"><img src="{% static 'img/svg/Vector_x.svg' %}" alt=""></span>
+                <div class="order__form-content">
+                    <div class="order__title">
+                        <h1>Sifariş vermək</h1>
+                    </div>
+                    <form action="" method="post">
+                        <input type="email" style="width: 100%;" placeholder="E-poçt">
+                        <input type="text" style="width: 100%;" placeholder="Əlaqə nömrəniz">
+                        <input type="text" placeholder="Ad">
+                        <input type="text" placeholder="Soyad">
+                        <textarea name="" id="" cols="30" rows="5" style="width: 100%;" placeholder="Messaj"></textarea>
+
+                        <div class="main__btn">
+                            <button>Göndər</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="{% static 'js/index.js' %}"></script>
+
+</body>
+</html>

@@ -80,114 +80,117 @@
                                 </div>
                             </div>
                             <div class="shop__structure">
-                                <div class="shop__element">
+                                {% for work in works %}
+                                <div class="shop__element" data-work-title="{{ work.slug }}">
                                     <div class="element__img">
-                                        <img src="{% static 'img/Rectangle 33.png' %}" alt="">
+                                        <img src="{{ work.main_img.url }}" alt="">
                                     </div>
                                     <div class="element__info">
-                                        <h3>Əsərin adı</h3>
+                                        <h3>{{ work.short_title }}</h3>
+                                        <input type="hidden" class="work_desc" value="{{ work.description }}">
                                         <span></span>
                                     </div>
                                 </div>
-                                <div class="shop__element">
-                                    <div class="element__img">
-                                        <img src="{% static 'img/Rectangle 33.png' %}" alt="">
-                                    </div>
-                                    <div class="element__info">
-                                        <h3>Əsərin adı</h3>
-                                        <span></span>
-                                    </div>
-                                </div>
-                                <div class="shop__element">
-                                    <div class="element__img">
-                                        <img src="{% static 'img/Rectangle 33.png' %}" alt="">
-                                    </div>
-                                    <div class="element__info">
-                                        <h3>Əsərin adı</h3>
-                                        <span></span>
-                                    </div>
-                                </div>
-                                <div class="shop__element">
-                                    <div class="element__img">
-                                        <img src="{% static 'img/Rectangle 33.png' %}" alt="">
-                                    </div>
-                                    <div class="element__info">
-                                        <h3>Əsərin adı</h3>
-                                        <span></span>
-                                    </div>
-                                </div>
-                                <div class="shop__element">
-                                    <div class="element__img">
-                                        <img src="{% static 'img/Rectangle 33.png' %}" alt="">
-                                    </div>
-                                    <div class="element__info">
-                                        <h3>Əsərin adı</h3>
-                                        <span></span>
-                                    </div>
-                                </div>
-                                <div class="shop__element">
-                                    <div class="element__img">
-                                        <img src="{% static 'img/Rectangle 33.png' %}" alt="">
-                                    </div>
-                                    <div class="element__info">
-                                        <h3>Əsərin adı</h3>
-                                        <span></span>
-                                    </div>
-                                </div>
-                                <div class="shop__element">
-                                    <div class="element__img">
-                                        <img src="{% static 'img/Rectangle 33.png' %}" alt="">
-                                    </div>
-                                    <div class="element__info">
-                                        <h3>Əsərin adı</h3>
-                                        <span></span>
-                                    </div>
-                                </div>
-                                <div class="shop__element">
-                                    <div class="element__img">
-                                        <img src="{% static 'img/Rectangle 33.png' %}" alt="">
-                                    </div>
-                                    <div class="element__info">
-                                        <h3>Əsərin adı</h3>
-                                        <span></span>
-                                    </div>
-                                </div>
-                                <div class="shop__element">
-                                    <div class="element__img">
-                                        <img src="{% static 'img/Rectangle 33.png' %}" alt="">
-                                    </div>
-                                    <div class="element__info">
-                                        <h3>Əsərin adı</h3>
-                                        <span></span>
-                                    </div>
-                                </div>
-                                <div class="shop__element">
-                                    <div class="element__img">
-                                        <img src="{% static 'img/Rectangle 33.png' %}" alt="">
-                                    </div>
-                                    <div class="element__info">
-                                        <h3>Əsərin adı</h3>
-                                        <span></span>
-                                    </div>
-                                </div>
-                                <div class="shop__element">
-                                    <div class="element__img">
-                                        <img src="{% static 'img/Rectangle 33.png' %}" alt="">
-                                    </div>
-                                    <div class="element__info">
-                                        <h3>Əsərin adı</h3>
-                                        <span></span>
-                                    </div>
-                                </div>
-                                <div class="shop__element">
-                                    <div class="element__img">
-                                        <img src="{% static 'img/Rectangle 33.png' %}" alt="">
-                                    </div>
-                                    <div class="element__info">
-                                        <h3>Əsərin adı</h3>
-                                        <span></span>
-                                    </div>
-                                </div>
+                                {% endfor %}
+{#                                <div class="shop__element">#}
+{#                                    <div class="element__img">#}
+{#                                        <img src="{% static 'img/Rectangle 33.png' %}" alt="">#}
+{#                                    </div>#}
+{#                                    <div class="element__info">#}
+{#                                        <h3>Əsərin adı</h3>#}
+{#                                        <span></span>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="shop__element">#}
+{#                                    <div class="element__img">#}
+{#                                        <img src="{% static 'img/Rectangle 33.png' %}" alt="">#}
+{#                                    </div>#}
+{#                                    <div class="element__info">#}
+{#                                        <h3>Əsərin adı</h3>#}
+{#                                        <span></span>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="shop__element">#}
+{#                                    <div class="element__img">#}
+{#                                        <img src="{% static 'img/Rectangle 33.png' %}" alt="">#}
+{#                                    </div>#}
+{#                                    <div class="element__info">#}
+{#                                        <h3>Əsərin adı</h3>#}
+{#                                        <span></span>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="shop__element">#}
+{#                                    <div class="element__img">#}
+{#                                        <img src="{% static 'img/Rectangle 33.png' %}" alt="">#}
+{#                                    </div>#}
+{#                                    <div class="element__info">#}
+{#                                        <h3>Əsərin adı</h3>#}
+{#                                        <span></span>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="shop__element">#}
+{#                                    <div class="element__img">#}
+{#                                        <img src="{% static 'img/Rectangle 33.png' %}" alt="">#}
+{#                                    </div>#}
+{#                                    <div class="element__info">#}
+{#                                        <h3>Əsərin adı</h3>#}
+{#                                        <span></span>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="shop__element">#}
+{#                                    <div class="element__img">#}
+{#                                        <img src="{% static 'img/Rectangle 33.png' %}" alt="">#}
+{#                                    </div>#}
+{#                                    <div class="element__info">#}
+{#                                        <h3>Əsərin adı</h3>#}
+{#                                        <span></span>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="shop__element">#}
+{#                                    <div class="element__img">#}
+{#                                        <img src="{% static 'img/Rectangle 33.png' %}" alt="">#}
+{#                                    </div>#}
+{#                                    <div class="element__info">#}
+{#                                        <h3>Əsərin adı</h3>#}
+{#                                        <span></span>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="shop__element">#}
+{#                                    <div class="element__img">#}
+{#                                        <img src="{% static 'img/Rectangle 33.png' %}" alt="">#}
+{#                                    </div>#}
+{#                                    <div class="element__info">#}
+{#                                        <h3>Əsərin adı</h3>#}
+{#                                        <span></span>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="shop__element">#}
+{#                                    <div class="element__img">#}
+{#                                        <img src="{% static 'img/Rectangle 33.png' %}" alt="">#}
+{#                                    </div>#}
+{#                                    <div class="element__info">#}
+{#                                        <h3>Əsərin adı</h3>#}
+{#                                        <span></span>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="shop__element">#}
+{#                                    <div class="element__img">#}
+{#                                        <img src="{% static 'img/Rectangle 33.png' %}" alt="">#}
+{#                                    </div>#}
+{#                                    <div class="element__info">#}
+{#                                        <h3>Əsərin adı</h3>#}
+{#                                        <span></span>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="shop__element">#}
+{#                                    <div class="element__img">#}
+{#                                        <img src="{% static 'img/Rectangle 33.png' %}" alt="">#}
+{#                                    </div>#}
+{#                                    <div class="element__info">#}
+{#                                        <h3>Əsərin adı</h3>#}
+{#                                        <span></span>#}
+{#                                    </div>#}
+{#                                </div>#}
                             </div>
                         </div>
                     </div>
