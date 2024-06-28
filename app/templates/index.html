@@ -301,9 +301,8 @@
         {% include 'template/footer.html' %}
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/slick.js' %}"></script>
     <script src="{% static 'js/index.js' %}"></script>
 </body>
 </html>
