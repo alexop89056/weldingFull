@@ -6,9 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Сварочные Работы</title>
+    <link rel="icon" href="{% static 'img/logo/icon.png' %}" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
 </head>
 <body>
@@ -49,7 +50,7 @@
                                 <h1>Müştəriyə şəhərdaxili və <span>şəhərxarici</span> qaynaq işlərinin xidmətləri təqdim <span>olunur.</span></h1>
                             </div>
                             <div class="info">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p>Xidmətlərimiz yüksək keyfiyyət standartlarına uyğun şəkildə və sərfəli qiymətlərlə təklif edilir. Müştərilərimiz üçün fərdi yanaşma və sürətli xidmət göstərməyə daim hazırıq.</p>
                             </div>
                             <div class="main__btn order ">
                                 <button>Si̇fari̇ş vermək</button>
@@ -74,15 +75,15 @@
                                 <div class="services__feature">
                                     <div>
                                         <span><img src="{% static 'img/svg/Vector_feautere.svg' %}"></span>
-                                        <p>Lorem ipsum dolor sit amet</p>
+                                        <p>Çox yüksək keyfiyyət</p>
                                     </div>
                                     <div>
                                         <span><img src="{% static 'img/svg/Vector_feautere.svg' %}"></span>
-                                        <p>Lorem ipsum dolor sit amet</p>
+                                        <p>Sürətli və keyfiyyətli icra.</p>
                                     </div>
                                     <div>
                                         <span><img src="{% static 'img/svg/Vector_feautere.svg' %}"></span>
-                                        <p>Lorem ipsum dolor sit amet</p>
+                                        <p>Mümkün olan əlçatmaz qiymət</p>
                                     </div>
                                 </div>
                                 <div class="main__btn order">
@@ -136,7 +137,7 @@
                                     <h1>Mənim işlərim</h1>
                                 </div>
                                 <div class="text">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates perferendis possimus voluptas rem explicabo consequatur sequi molestias, repellendus nostrum laudantium soluta aut vero.    </p>
+                                    <p>Burada mənim yaradıcılığımın və peşəkarlığımın ən parlaq və ilhamverici nümunələrini tapa bilərsiniz.</p>
                                 </div>
                             </div>
                             <div class="products__slider">
@@ -167,142 +168,127 @@
                                 </div>
                             </div>
                             <div class="review__slider">
+                                {% for review in reviews %}
                                 <div class="review__slider-item">
                                     <div class="slider__body">
                                         <div class="review__title">
-                                            <h1>Valeriya</h1>
+                                            <h1>{{ review.name }}</h1>
                                             <div class="stars">
                                                 <span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span>
                                             </div>
 
                                         </div>
                                         <div class="review__text">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde ipsam laudantium illum eaque, nihil quibusdam explicabo sint itaque quas quis sit tempora dolorem nesciunt facilis aliquid fuga est! Fugiat deserunt officia consequuntur mollitia optio nemo corporis dolorum, possimus tempore perspiciatis quos minus cum blanditiis sunt! Animi voluptatibus possimus illum quas?</p>
+                                            <p>{{ review.desc }}</p>
                                         </div>
                                         <div class="review__date">
-                                            <h3>Feb 15, 2024</h3>
+                                            <h3>{{ review.date }}</h3>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="review__slider-item">
-                                    <div class="slider__body">
-                                        <div class="review__title">
-                                            <h1>Valeriya</h1>
-                                            <div class="stars">
-                                                <span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span>
-                                            </div>
-
-                                        </div>
-                                        <div class="review__text">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde ipsam laudantium illum eaque, nihil quibusdam explicabo sint itaque quas quis sit tempora dolorem nesciunt facilis aliquid fuga est! Fugiat deserunt officia consequuntur mollitia optio nemo corporis dolorum, possimus tempore perspiciatis quos minus cum blanditiis sunt! Animi voluptatibus possimus illum quas?</p>
-                                        </div>
-                                        <div class="review__date">
-                                            <h3>Feb 15, 2024</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="review__slider-item">
-                                    <div class="slider__body">
-                                        <div class="review__title">
-                                            <h1>Valeriya</h1>
-                                            <div class="stars">
-                                                <span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span>
-                                            </div>
-
-                                        </div>
-                                        <div class="review__text">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde ipsam laudantium illum eaque, nihil quibusdam explicabo sint itaque quas quis sit tempora dolorem nesciunt facilis aliquid fuga est! Fugiat deserunt officia consequuntur mollitia optio nemo corporis dolorum, possimus tempore perspiciatis quos minus cum blanditiis sunt! Animi voluptatibus possimus illum quas?</p>
-                                        </div>
-                                        <div class="review__date">
-                                            <h3>Feb 15, 2024</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="review__slider-item">
-                                    <div class="slider__body">
-                                        <div class="review__title">
-                                            <h1>Valeriya</h1>
-                                            <div class="stars">
-                                                <span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span>
-                                            </div>
-
-                                        </div>
-                                        <div class="review__text">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde ipsam laudantium illum eaque, nihil quibusdam explicabo sint itaque quas quis sit tempora dolorem nesciunt facilis aliquid fuga est! Fugiat deserunt officia consequuntur mollitia optio nemo corporis dolorum, possimus tempore perspiciatis quos minus cum blanditiis sunt! Animi voluptatibus possimus illum quas?</p>
-                                        </div>
-                                        <div class="review__date">
-                                            <h3>Feb 15, 2024</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="review__slider-item">
-                                    <div class="slider__body">
-                                        <div class="review__title">
-                                            <h1>Valeriya</h1>
-                                            <div class="stars">
-                                                <span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span>
-                                            </div>
-
-                                        </div>
-                                        <div class="review__text">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde ipsam laudantium illum eaque, nihil quibusdam explicabo sint itaque quas quis sit tempora dolorem nesciunt facilis aliquid fuga est! Fugiat deserunt officia consequuntur mollitia optio nemo corporis dolorum, possimus tempore perspiciatis quos minus cum blanditiis sunt! Animi voluptatibus possimus illum quas?</p>
-                                        </div>
-                                        <div class="review__date">
-                                            <h3>Feb 15, 2024</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="review__slider-item">
-                                    <div class="slider__body">
-                                        <div class="review__title">
-                                            <h1>Valeriya</h1>
-                                            <div class="stars">
-                                                <span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="/{% static 'img/svg/Vector_star.svg' %}" alt=""></span>
-                                            </div>
-
-                                        </div>
-                                        <div class="review__text">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde ipsam laudantium illum eaque, nihil quibusdam explicabo sint itaque quas quis sit tempora dolorem nesciunt facilis aliquid fuga est! Fugiat deserunt officia consequuntur mollitia optio nemo corporis dolorum, possimus tempore perspiciatis quos minus cum blanditiis sunt! Animi voluptatibus possimus illum quas?</p>
-                                        </div>
-                                        <div class="review__date">
-                                            <h3>Feb 15, 2024</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="review__slider-item">
-                                    <div class="slider__body">
-                                        <div class="review__title">
-                                            <h1>Valeriya</h1>
-                                            <div class="stars">
-                                                <span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span>
-                                            </div>
-
-                                        </div>
-                                        <div class="review__text">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde ipsam laudantium illum eaque, nihil quibusdam explicabo sint itaque quas quis sit tempora dolorem nesciunt facilis aliquid fuga est! Fugiat deserunt officia consequuntur mollitia optio nemo corporis dolorum, possimus tempore perspiciatis quos minus cum blanditiis sunt! Animi voluptatibus possimus illum quas?</p>
-                                        </div>
-                                        <div class="review__date">
-                                            <h3>Feb 15, 2024</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="review__slider-item">
-                                    <div class="slider__body">
-                                        <div class="review__title">
-                                            <h1>Valeriya</h1>
-                                            <div class="stars">
-                                                <span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span>
-                                            </div>
-
-                                        </div>
-                                        <div class="review__text">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde ipsam laudantium illum eaque, nihil quibusdam explicabo sint itaque quas quis sit tempora dolorem nesciunt facilis aliquid fuga est! Fugiat deserunt officia consequuntur mollitia optio nemo corporis dolorum, possimus tempore perspiciatis quos minus cum blanditiis sunt! Animi voluptatibus possimus illum quas?</p>
-                                        </div>
-                                        <div class="review__date">
-                                            <h3>Feb 15, 2024</h3>
-                                        </div>
-                                    </div>
-                                </div>
+                                {% endfor %}
+{#                                <div class="review__slider-item">#}
+{#                                    <div class="slider__body">#}
+{#                                        <div class="review__title">#}
+{#                                            <h1>Fərid M.</h1>#}
+{#                                            <div class="stars">#}
+{#                                                <span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span>#}
+{#                                            </div>#}
+{##}
+{#                                        </div>#}
+{#                                        <div class="review__text">#}
+{#                                            <p>İşləriniz çox ilhamvericidir və hər bir detalda sizin peşəkarlığınız hiss olunur. Mənim layihəmizi mükəmməl həyata keçirdiyiniz üçün təşəkkür edirəm.</p>#}
+{#                                        </div>#}
+{#                                        <div class="review__date">#}
+{#                                            <h3>May 30, 2024</h3>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="review__slider-item">#}
+{#                                    <div class="slider__body">#}
+{#                                        <div class="review__title">#}
+{#                                            <h1>Elvin H.</h1>#}
+{#                                            <div class="stars">#}
+{#                                                <span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span>#}
+{#                                            </div>#}
+{##}
+{#                                        </div>#}
+{#                                        <div class="review__text">#}
+{#                                            <p>Sizinlə işləmək çox rahat və məhsuldar idi. Hər bir təklifi dinləyir və ən yaxşı nəticəni əldə etməyə çalışırsınız. Mən tamamilə razı qaldım.</p>#}
+{#                                        </div>#}
+{#                                        <div class="review__date">#}
+{#                                            <h3>May 12, 2024</h3>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="review__slider-item">#}
+{#                                    <div class="slider__body">#}
+{#                                        <div class="review__title">#}
+{#                                            <h1>Orxan T.</h1>#}
+{#                                            <div class="stars">#}
+{#                                                <span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span>#}
+{#                                            </div>#}
+{##}
+{#                                        </div>#}
+{#                                        <div class="review__text">#}
+{#                                            <p>Əla iş! Çox sürətli və keyfiyyətli xidmət göstərdiniz. Sizinlə işləmək həqiqətən zövq idi. Növbəti layihələrimizdə də sizinlə əməkdaşlıq etmək istərdim.</p>#}
+{#                                        </div>#}
+{#                                        <div class="review__date">#}
+{#                                            <h3>Apr 24, 2024</h3>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="review__slider-item">#}
+{#                                    <div class="slider__body">#}
+{#                                        <div class="review__title">#}
+{#                                            <h1>Vüsal Ə.</h1>#}
+{#                                            <div class="stars">#}
+{#                                                <span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span>#}
+{#                                            </div>#}
+{##}
+{#                                        </div>#}
+{#                                        <div class="review__text">#}
+{#                                            <p>Sizin işinizin keyfiyyəti və vaxtında tamamlanması məni çox məmnun etdi. Sizə gələcək işlərinizdə də uğurlar diləyirəm. Çox sağ olun!</p>#}
+{#                                        </div>#}
+{#                                        <div class="review__date">#}
+{#                                            <h3>Apr 16, 2024</h3>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="review__slider-item">#}
+{#                                    <div class="slider__body">#}
+{#                                        <div class="review__title">#}
+{#                                            <h1>Rəşad İ.</h1>#}
+{#                                            <div class="stars">#}
+{#                                                <span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="/{% static 'img/svg/Vector_star.svg' %}" alt=""></span>#}
+{#                                            </div>#}
+{##}
+{#                                        </div>#}
+{#                                        <div class="review__text">#}
+{#                                            <p>Sizinlə işləmək çox xoş idi. Peşəkarlığınız və müştəriyə olan hörmətiniz işinizdə hər zaman hiss olunur. Gözəl nəticələr üçün təşəkkür edirəm.</p>#}
+{#                                        </div>#}
+{#                                        <div class="review__date">#}
+{#                                            <h3>Apr 2, 2024</h3>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="review__slider-item">#}
+{#                                    <div class="slider__body">#}
+{#                                        <div class="review__title">#}
+{#                                            <h1>Səbuhi Q.</h1>#}
+{#                                            <div class="stars">#}
+{#                                                <span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span><span><img src="{% static 'img/svg/Vector_star.svg' %}" alt=""></span>#}
+{#                                            </div>#}
+{##}
+{#                                        </div>#}
+{#                                        <div class="review__text">#}
+{#                                            <p>İşlərinizə əksərən dəyər verirəm! Sizin peşəkarlığınız və müştəriyə qarşı diqqətiniz gözəl nəticələr əldə etməyimizi təmin edir. Çox təşəkkür edirəm!</p>#}
+{#                                        </div>#}
+{#                                        <div class="review__date">#}
+{#                                            <h3>Mar 18, 2024</h3>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
                             </div>
                         </div>
                     </div>
