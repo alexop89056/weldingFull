@@ -3,7 +3,7 @@ import random
 from django.http import HttpResponseNotFound
 from django.shortcuts import render
 
-from app.models import Work
+from app.models import Work, Category
 
 reviews = [
     {
@@ -48,7 +48,8 @@ def index(request):
 
 def catalog(request):
     context = {
-        "works": Work.objects.all()
+        "works": Work.objects.all(),
+        "categories": Category.objects.all(),
     }
     return render(request, 'catalog.html', context=context)
 
