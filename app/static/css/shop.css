@@ -1084,6 +1084,10 @@ button {
 .pagination__body ul li a:hover {
   background: #FEC627;
 }
+.pagination__body ul li.active a {
+  background: #FEC627 !important;
+}
+
 
 .order__part {
   background: url("../img/Rectangle 30.png") center center no-repeat;
