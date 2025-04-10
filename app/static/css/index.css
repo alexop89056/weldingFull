@@ -983,3 +983,9 @@ footer .footer__subscribe .main__btn button {
   left: 0 ;
   top: -20px;
 }
+.header__link {
+  transition: 0.3s all ease;
+}
+.header__link:hover {
+  color: #FEC627 !important;
+}
