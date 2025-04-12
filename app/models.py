@@ -28,3 +28,7 @@ class Work(models.Model):
         unique_slug = f"{base_slug}-{random_num}"
         self.slug = unique_slug
         super().save(*args, **kwargs)
+
+class MainImage(models.Model):
+    main_img = models.ImageField(upload_to="main")
+    active = models.BooleanField(default=True)

@@ -3,7 +3,7 @@ import random
 from django.http import HttpResponseNotFound
 from django.shortcuts import render
 
-from app.models import Work, Category
+from app.models import Work, Category, MainImage
 
 reviews = [
     {
@@ -41,7 +41,8 @@ reviews = [
 def index(request):
     random.shuffle(reviews)
     context = {
-        "reviews": reviews
+        "reviews": reviews,
+        "main_images": MainImage.objects.order_by("?").all()[:10]
     }
     return render(request, 'index.html', context=context)
 
